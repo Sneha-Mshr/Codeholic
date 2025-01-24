@@ -16,7 +16,6 @@ const {
     return async (dispatch) => {
       const toastId = toast.loading("Loading...")
       try {
-        console.log("Oitash")
         const response = await apiConnector(
           "PUT",
           UPDATE_DISPLAY_PICTURE_API,

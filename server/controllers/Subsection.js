@@ -32,7 +32,6 @@ exports.createSubSection = async (req, res) => {
     );
 
     console.log("Uploaded details -> ", uploadDetails)
-    console.log("Oitash - 2")
     //create a sub-section(create entry in database)
     const subSectionDetails = await SubSection.create({
       title: title,
@@ -44,7 +43,6 @@ exports.createSubSection = async (req, res) => {
 
     console.log("Video details -> ", subSectionDetails)
 
-    console.log("Oitash - 3")
     //update the subsection array in section schema by creating entry with subsectionId
     const updatedSection = await Section.findByIdAndUpdate(
       //searching parameter
@@ -62,7 +60,6 @@ exports.createSubSection = async (req, res) => {
 
     console.log("Updated Section Details -> ", updatedSection);
 
-    console.log("Oitash - 4")
     //return response
     return res.status(200).json({
       success: true,

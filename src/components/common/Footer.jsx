@@ -172,7 +172,7 @@ const Footer = () => {
             })}
           </div>
 
-          <div className="text-center">Made with ❤️ by Oitash Ghosh © 2023 Codeholic</div>
+          <div className="text-center">Made with ❤️ by Sneha Mishra © 2024 Codeholic</div>
         </div>
       </div>
     </div>
